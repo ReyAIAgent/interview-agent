@@ -1,0 +1,38 @@
+# === General ===
+.DS_Store
+.env
+*.log
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# === Virtual Environment ===
+venv/
+env/
+ENV/
+
+# === Audio Files (interview recordings, TTS) ===
+*.webm
+*.wav
+*.mp3
+
+# === FastAPI / Uvicorn Temp Files ===
+*.pid
+*.db
+*.sqlite3
+
+# === IDEs & Editors ===
+.vscode/
+.idea/
+
+# === System files ===
+Thumbs.db
+desktop.ini
+
+# === Frontend Node Modules ===
+frontend/node_modules/
+frontend/build/

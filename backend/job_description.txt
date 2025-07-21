@@ -1,0 +1,13 @@
+Job_Summary:
+
+Downtown Music is a modern global music company focused on empowering creators and rights holders. They are seeking an AI Engineer to introduce and integrate AI solutions into existing engineering systems and optimize internal business workflows.
+
+
+Responsibilities:
+
+• Design and implement AI-driven features, tools, or systems to enhance existing engineering workflows.
+• Build robust, scalable prototypes using LLMs, embeddings, or ML models tailored to real-world internal use cases.
+• Collaborate with product, ops, and engineering teams to identify high-impact areas where AI can streamline or reinvent business processes.
+• Establish best practices for integrating AI into software systems, including testing, monitoring, versioning, and safety.
+• Evaluate, test, and recommend AI platforms, frameworks, and APIs that suit our evolving needs.
+• Stay current with the rapidly changing AI landscape and bring relevant advancements into the organization.
