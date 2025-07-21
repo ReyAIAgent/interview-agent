@@ -38,12 +38,6 @@ app.add_middleware(
 )
 
 # Upload Resume
-# @app.post("/upload-resume/")
-# async def upload_resume(file: UploadFile = File(...)):
-#     content = await file.read()
-#     resume_text = extract_text_from_pdf(content)
-#     interview_session["resume_text"] = resume_text
-#     return {"resume_text": resume_text}
 @app.post("/upload-resume/")
 async def upload_resume(file: UploadFile = File(...)):
     contents = await file.read()
@@ -115,8 +109,7 @@ async def answer_question(data: AnswerInput):
         question=question,
         answer=data.answer
     )
-    print("=== DEBUG EVALUATION RESULT ===")
-    print(result)
+    
 
     
     interview_session["qa_history"].append({
@@ -150,8 +143,7 @@ async def get_interview_history():
     return {"history": interview_session["qa_history"]}
 
 
-# === New Voice AI Endpoints ===
-
+# ===  Voice AI Endpoints ===
 from openai import OpenAI
 client = OpenAI()
 
@@ -182,8 +174,7 @@ async def transcribe_audio(file: UploadFile = File(...)):
         )
 
 
-        print("FFmpeg stdout:", result.stdout)
-        print("FFmpeg stderr:", result.stderr)
+
 
         if result.returncode != 0:
             return {"error": f"FFmpeg failed: {result.stderr}"}
@@ -197,15 +188,15 @@ async def transcribe_audio(file: UploadFile = File(...)):
                 model="whisper-1",
                 file=audio_file
             )
-            print("✅ Transcription complete")
+            print(" Transcription complete")
             return {"transcript": transcript.text}
 
     except Exception as e:
-        print("❌ Exception occurred:", e)
+        print(" Exception occurred:", e)
         return {"error": f"Unexpected error: {str(e)}"}
 
     finally:
-        print("🧹 Cleaning up")
+        print("Cleaning up")
         if os.path.exists(input_path):
             os.remove(input_path)
         if os.path.exists(output_path):
