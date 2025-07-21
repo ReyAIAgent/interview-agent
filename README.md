@@ -46,18 +46,24 @@ A full-stack AI-powered interview simulation system that provides personalized q
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. Install requirements:
+   ```bash
    pip install -r requirements.txt
-4. Start the API server:
+5. Start the API server:
+   ```bash
    uvicorn main:app --reload
 
 ##  Frontend Setup (React)
 1. Navigate to the frontend directory:
+   ```bash
    cd frontend
 2. Install dependencies:
+   ```bash
    npm install
 3. Start the React development server:
+   ```bash
    npm start
 
 ##  Notes
-Make sure ffmpeg is installed and added to your system PATH.
-Audio recordings are saved and transcribed using Whisper or pydub.
+-- Make sure ffmpeg is installed and added to your system PATH.
+
+--Audio recordings are saved and transcribed using Whisper or pydub.
