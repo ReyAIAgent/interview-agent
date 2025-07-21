@@ -44,7 +44,7 @@ A full-stack AI-powered interview simulation system that provides personalized q
    npm install
 3. Start the React development server:
    ```bash
-   npm start
+   npm start # Runs the app in the development mode.  Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
