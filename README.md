@@ -13,26 +13,6 @@ A full-stack AI-powered interview simulation system that provides personalized q
 -  **Real-Time Coaching Tips**
 -  **Text-to-Speech Support**
 
----
-
-##  Project Structure
-.
-├── backend/
-│ ├── agent_interviewer.py
-│ ├── evaluator.py
-│ ├── loaders.py
-│ ├── main.py
-│ ├── models.py
-│ ├── question_generator.py
-│ ├── resume_analysis.py
-│ └── requirements.txt
-├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ └── App.js
-│ ├── .gitignore
-│ └── package.json
-└── README.md
 
 ---
 
@@ -52,6 +32,9 @@ A full-stack AI-powered interview simulation system that provides personalized q
    ```bash
    uvicorn main:app --reload
 
+
+---
+
 ##  Frontend Setup (React)
 1. Navigate to the frontend directory:
    ```bash
@@ -62,6 +45,8 @@ A full-stack AI-powered interview simulation system that provides personalized q
 3. Start the React development server:
    ```bash
    npm start
+
+---
 
 ##  Notes
 -- Make sure ffmpeg is installed and added to your system PATH.
